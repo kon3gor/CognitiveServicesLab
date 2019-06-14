@@ -1,7 +1,7 @@
 Cognitive Services with Xamarin lab
 ------
 
-**Cognitive Services** is a tool, that gives ability to use Machine Learning algorithms without any expirence in creating and training models. Today we’ll create a simple **Xamarin app**, wich will use it.
+**Cognitive Services** is a tool, that gives ability to use Machine Learning algorithms without any expirence in creating and training models. Today we’ll create a simple **Xamarin app**, which will use it.
 
 Objectives
 ------
