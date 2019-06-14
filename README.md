@@ -43,4 +43,5 @@ Creating basic Xamarin app:
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
 * Now you can deploy your app
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.png)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/5.jpg)
 
