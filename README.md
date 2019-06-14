@@ -32,6 +32,6 @@ Overview
 
 Estimated time to finish this lab: 60 minutes
 
-![text](https://github.com/ilia2108/XamarinLab/blob/master/ex1/1.png)
+![](https://github.com/ilia2108/XamarinLab/blob/master/ex1/1.png)
 
 
