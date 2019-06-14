@@ -5,14 +5,15 @@ Cognitive Services with Xamarin lab
 
 Objectives
 -
-##During the lab you'll learn:
+During the lab you'll learn:
+---
 * How to create simple Xamarin Android app.
 * How to create Cognitive Service in Azure Cloud.
 * How to make request to Azure server.
 * How to get response from Azure server.
 
 
-#Prerequisites
+Prerequisites
 -
 During the lab you'll need:
 ---
@@ -20,7 +21,7 @@ During the lab you'll need:
 * At least Android Emulator should be installed
 * Active Azure subscription. If you don't have it see all options [here (Rus)](https://habr.com/ru/company/microsoft/blog/352786/)
 
----
+
 
 Overview
 -
