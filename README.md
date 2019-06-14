@@ -32,6 +32,13 @@ Overview
 
 Estimated time to finish this lab: 60 minutes
 
+
+Creating basic Xamarin app:
+------
+* Open new instance of Visual Studio 
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/1.png)
 
-
+* Create new Adroid app (follow screenshots below)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/2.png)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.png)
