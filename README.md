@@ -41,6 +41,6 @@ Creating basic Xamarin app:
 * Create new Adroid app (follow screenshots below)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/2.png)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
-* Now you can deply your app
+* Now you can deploy your app
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.png)
 
