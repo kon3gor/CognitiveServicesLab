@@ -56,7 +56,7 @@ Add some settings to the app:
 * You should type *storage* in the search string and pick both found options.
 ![]()
 * Now you can go to the *MainActivity.cs* and do folowing steps:
-* Add *permission request*.
+* Add *permission request* to the OnCreate method.
 ```C#
 ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage }, 1);
 ```
