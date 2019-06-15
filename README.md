@@ -70,7 +70,7 @@ btn.Click += delegate {
                 imageIntent.SetAction(Intent.ActionGetContent);
                 StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
             };
-       ```
+```
 
 
 
