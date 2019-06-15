@@ -26,15 +26,16 @@ During the lab you'll need:
 Overview
 -------
 1. Load basic **Xamarin app** from zip.
-2. Creating **Computer Vision** service in **Azure cloud**.
-3. Adding requset method to the app.
-4. Handling response from Azure server.
+2. Add some settings to the app.
+3. Creating **Computer Vision** service in **Azure cloud**.
+4. Adding requset method to the app.
+5. Handling response from Azure server.
 
 Estimated time to finish this lab: 60 minutes
 
 
 Load basic Xamarin app from zip:
-------
+-------
 * Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcOiRhobqfXRN5QI?e=9mag4H) 
 * Unzip project
 * Open project in Visual Studio(follow screenshote bellow)
@@ -45,6 +46,28 @@ Load basic Xamarin app from zip:
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.jpg)
 * Explore the resoult  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/5.png)
+
+Add some settings to the app:
+-------
+* Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
+* Double left click on properties.
+![]()
+* Scroll down and find field *Required permissions*. 
+* You should type *storage* in the search string and pick both found options.
+![]()
+* Now you can go to the *MainActivity.cs* and do folowing steps:
+* Add new action to the button.
+```C#
+btn.Click += delegate {
+
+    var imageIntent = new Intent();
+    imageIntent.SetType("image/*");
+    imageIntent.SetAction(Intent.ActionGetContent);
+    StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
+};
+```
+
+
 
 
 
