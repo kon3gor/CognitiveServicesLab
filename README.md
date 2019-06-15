@@ -43,7 +43,7 @@ Load basic Xamarin app from zip:
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
 * Now you can deploy your app
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.jpg)
-* Explore the resoult 
+* Explore the resoult
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/5.png)
 
 
