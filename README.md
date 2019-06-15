@@ -25,8 +25,8 @@ During the lab you'll need:
 
 Overview
 -------
-1. Load basic **Xamarin app** from zip.
-2. Add some settings to the app.
+1. Loading basic **Xamarin app** from zip.
+2. Addong some settings to the app.
 3. Creating **Computer Vision** service in **Azure cloud**.
 4. Adding requset method to the app.
 5. Handling response from Azure server.
@@ -34,11 +34,11 @@ Overview
 Estimated time to finish this lab: 60 minutes
 
 
-Load basic Xamarin app from zip:
+Loading basic Xamarin app from zip:
 -------
 * Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcOiRhobqfXRN5QI?e=9mag4H) 
 * Unzip project
-* Open project in Visual Studio(follow screenshote bellow)
+* Open project in Visual Studio(follow screenshots bellow)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/1.png)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/2.jpg)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
@@ -47,7 +47,7 @@ Load basic Xamarin app from zip:
 * Explore the resoult  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/5.png)
 
-Add some settings to the app:
+Adding some settings to the app:
 -------
 * Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
 * Double left click on properties. Go to the **Android Manifest** in opened window.
