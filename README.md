@@ -56,16 +56,21 @@ Add some settings to the app:
 * You should type *storage* in the search string and pick both found options.
 ![]()
 * Now you can go to the *MainActivity.cs* and do folowing steps:
-* Add new action to the button.
+* Add *permission request*.
+```C#
+ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage,                                Manifest.Permission.WriteExternalStorage }, 1);
+};
+```
+* Add action to the button.
 ```C#
 btn.Click += delegate {
 
-    var imageIntent = new Intent();
-    imageIntent.SetType("image/*");
-    imageIntent.SetAction(Intent.ActionGetContent);
-    StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
-};
-```
+                var imageIntent = new Intent();
+                imageIntent.SetType("image/*");
+                imageIntent.SetAction(Intent.ActionGetContent);
+                StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
+            };
+       ```
 
 
 
