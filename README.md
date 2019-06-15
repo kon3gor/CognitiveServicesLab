@@ -72,7 +72,7 @@ btn.Click += delegate {
 ```
 * If you did everything right, you'll see something like this after deploying app.  
 *home screen*  
-![]()
+![]()  
 *after click the button*  
 ![]()
 
