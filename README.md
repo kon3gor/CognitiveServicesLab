@@ -70,7 +70,7 @@ btn.Click += delegate {
                 StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
             };
 ```
-* If you did everything right, you'll see something like this after deploying app.
+* If you did everything right, you'll see something like this after deploying app.  
 *home screen*  
 ![]()
 *after click the button*  
