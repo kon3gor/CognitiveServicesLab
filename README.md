@@ -51,10 +51,10 @@ Add some settings to the app:
 -------
 * Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
 * Double left click on properties. Go to the **Android Manifest** in opened window.
-![]()
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/7.png)
 * Scroll down and find field **Required permissions**. 
 * You should type **storage** in the search string and pick both found options.
-![]()
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/6.png)
 * Now you can go to the **MainActivity.cs** and do folowing steps:
 * Add **permission request** to the OnCreate method.
 ```C#
