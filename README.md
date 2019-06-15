@@ -52,11 +52,11 @@ Add some settings to the app:
 * Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
 * Double left click on properties.
 ![]()
-* Scroll down and find field *Required permissions*. 
-* You should type *storage* in the search string and pick both found options.
+* Scroll down and find field **Required permissions**. 
+* You should type **storage** in the search string and pick both found options.
 ![]()
-* Now you can go to the *MainActivity.cs* and do folowing steps:
-* Add *permission request* to the OnCreate method.
+* Now you can go to the **MainActivity.cs** and do folowing steps:
+* Add **permission request** to the OnCreate method.
 ```C#
 ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage }, 1);
 ```
