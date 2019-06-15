@@ -58,7 +58,7 @@ Add some settings to the app:
 * Now you can go to the *MainActivity.cs* and do folowing steps:
 * Add *permission request*.
 ```C#
-ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage,                                Manifest.Permission.WriteExternalStorage }, 1);
+ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage }, 1);
 };
 ```
 * Add action to the button.
