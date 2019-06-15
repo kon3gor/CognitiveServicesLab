@@ -35,7 +35,7 @@ Estimated time to finish this lab: 60 minutes
 
 Load basic Xamarin app from zip:
 ------
-* Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcKeR-3sTIgtFgls?e=nCgpED) 
+* Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcOiRhobqfXRN5QI?e=9mag4H) 
 * Unzip project
 * Open project in Visual Studio(follow screenshote bellow)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
