@@ -38,11 +38,13 @@ Load basic Xamarin app from zip:
 * Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcOiRhobqfXRN5QI?e=9mag4H) 
 * Unzip project
 * Open project in Visual Studio(follow screenshote bellow)
-
-
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/1.png)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/2.jpg)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
 * Now you can deploy your app
-
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.jpg)
 * Explore the resoult 
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/5.png)
 
 
 
