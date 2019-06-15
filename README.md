@@ -25,7 +25,7 @@ During the lab you'll need:
 
 Overview
 -------
-1. Creating basic **Xamarin app**.
+1. Load basic **Xamarin app** from zip.
 2. Creating **Computer Vision** service in **Azure cloud**.
 3. Adding requset method to the app.
 4. Handling response from Azure server.
@@ -33,13 +33,11 @@ Overview
 Estimated time to finish this lab: 60 minutes
 
 
-Creating basic Xamarin app:
+Load basic Xamarin app from zip:
 ------
-* Open new instance of Visual Studio 
-![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/1.png)
-
-* Create new Adroid app (follow screenshots below)
-![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/2.png)
+* Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcKeR-3sTIgtFgls?e=nCgpED) 
+* Unzip project
+* Open project in Visual Studio(follow screenshote bellow)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/3.png)
 * Now you can deploy your app
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/4.png)
