@@ -50,7 +50,7 @@ Load basic Xamarin app from zip:
 Add some settings to the app:
 -------
 * Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
-* Double left click on properties.
+* Double left click on properties. Go to the **Android Manifest** in opened window.
 ![]()
 * Scroll down and find field **Required permissions**. 
 * You should type **storage** in the search string and pick both found options.
