@@ -217,7 +217,7 @@ Handling response from Azure server.
  ```C#
  
             JToken resp = JToken.Parse(contentString);
-            string tmp = resp.ToString();
+            string tmp = resp["description"]["captions"][0]["text"].ToString();
             TextView textView = (TextView)FindViewById(Resource.Id.text);
             textView.Text = tmp;
  ```
@@ -240,7 +240,7 @@ Handling response from Azure server.
             string contentString = await response.Content.ReadAsStringAsync();
 
             JToken resp = JToken.Parse(contentString);
-            string tmp = resp.ToString();
+            string tmp = resp["description"]["captions"][0]["text"].ToString();
             TextView textView = (TextView)FindViewById(Resource.Id.text);
             textView.Text = tmp;
 
