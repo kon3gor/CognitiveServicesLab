@@ -99,7 +99,7 @@ Creating Computer Vision service in Azure cloud.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/13.png)
 * Now click **create** button and fill all fields. No matter which location you'll use, it affects only on the result url
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/14.png)
-* After a while you'll see somthing like this. Click **go to the resource**.
+* After a while you'll see somthing like this. Click **go to resource**.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/15.png)
 * Now you on yours computer vision service page.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
