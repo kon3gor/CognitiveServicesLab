@@ -76,6 +76,10 @@ btn.Click += delegate {
 *after click the button*  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/9.png)
 
+Creating Computer Vision service in Azure cloud.
+-------
+* Go to the [cloud](https://azure.microsoft.com/), than follow screenshots bellow.
+
 
 
 
