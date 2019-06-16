@@ -90,7 +90,7 @@ btn.Click += delegate {
 
 Creating Computer Vision service in Azure cloud.
 -------
-* Go to the [cloud](https://azure.microsoft.com/), than follow screenshots bellow.
+* Go to the [cloud](https://azure.microsoft.com/), than follow screenshots bellow.  
 *click **portal***
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/10.jpg)
 *click **create a resource***
@@ -104,6 +104,16 @@ Creating Computer Vision service in Azure cloud.
 * Now you on yours computer vision service page.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
 
+Adding request method to the app.
+-------
+* First of all, you need to return to this page and click **keys**.
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)  
+*After clicking you'll see something like this*  
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
+* Now copy first key and put it in variable before **OnCreate** method
+```C#
+private const string key = "8cb6b523ef3c4ece877682e826561853";
+```
 
 
 
