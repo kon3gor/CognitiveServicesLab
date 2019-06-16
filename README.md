@@ -106,9 +106,9 @@ Creating Computer Vision service in Azure cloud.
 
 Adding request method to the app.
 -------
-* First of all, you need to return to this page and click **keys**.
+* First of all, you need to return to this page and click **Keys**.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)  
-*After clicking you'll see something like this*  
+*After click you'll see something like this*  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
 * Now copy first key and put it in variable before **OnCreate** method
 ```C#
