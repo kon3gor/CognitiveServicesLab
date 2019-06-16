@@ -110,7 +110,7 @@ Adding request method to the app.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/17.jpg)  
 *After click you'll see something like this*  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/18.jpg)
-* Copy first key and put it in variable **before OnCreate** method.
+* Copy first key and put it in the variable **before OnCreate** method.
 ```C#
 private const string key = "8cb6b523ef3c4ece877682e826561853";
 ```
