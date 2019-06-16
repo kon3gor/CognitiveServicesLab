@@ -91,7 +91,18 @@ btn.Click += delegate {
 Creating Computer Vision service in Azure cloud.
 -------
 * Go to the [cloud](https://azure.microsoft.com/), than follow screenshots bellow.
-
+*click **portal***
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/10.jpg)
+*click **create a resource***
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/11.jpg)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/12.jpg)
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/13.png)
+* Now click **create** button and fill all fields. No matter which location you'll use, it affects only on the result url
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/14.png)
+* After a while you'll see somthing like this. Click **go to the resource**.
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/15.png)
+* Now you on yours computer vision service page.
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
 
 
 
