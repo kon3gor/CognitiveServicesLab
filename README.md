@@ -70,6 +70,18 @@ btn.Click += delegate {
                 StartActivityForResult(Intent.CreateChooser(imageIntent, "Select photo"), 0);
             };
 ```
+* Add **OnActivityResult** method to the activity. 
+```C#
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            if (resultCode == Result.Ok)
+            {
+            }
+        }
+```
 * If you did everything right, you'll see something like this after deploying app.  
 *home screen*  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/8.png)  
