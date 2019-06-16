@@ -110,10 +110,145 @@ Adding request method to the app.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)  
 *After click you'll see something like this*  
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/16.png)
-* Now copy first key and put it in variable before **OnCreate** method
+* Copy first key and put it in variable **before OnCreate** method.
 ```C#
 private const string key = "8cb6b523ef3c4ece877682e826561853";
 ```
+* Now we need to create some more variable **before OnCreate** method.
+```C#
+        private const string urlBase = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/analyze/";
+        private static readonly HttpClient client = new HttpClient {
+            DefaultRequestHeaders = { { "Ocp-Apim-Subscription-Key", key } }
+        };
+```
+* And make some changes in the **OnActivityResult** method. Add this two strings to the conditional operator.
+```C#
+string path = ActualPath.GetActualPathFromFile(data.Data);
+Analyze(path);
+```
+* Now we need to create new **async Task** for making http requests to the cloud.
+```C#
+        async Task Analyze(string imageFilePath)
+        {
 
+        }
+```
+* There, we need to create a few variables.
+```C#
+            HttpResponseMessage response;
+            string requestParameters = "visualFeatures=Description";
+            string uri = urlBase + "?" + requestParameters;
+            byte[] byteData = GetImageAsByteArray(imageFilePath);
+```
+* As you see, there is nonexisting method ``` GetImageAsByteArray``` here. So let's create it.
+```C#
+        static byte[] GetImageAsByteArray(string imageFilePath)
+        {
+            // Open a read-only file stream for the specified file.
+            using (FileStream fileStream =
+                new FileStream(imageFilePath, FileMode.Open, FileAccess.Read))
+            {
+                // Read the file's contents into a byte array.
+                BinaryReader binaryReader = new BinaryReader(fileStream);
+                return binaryReader.ReadBytes((int)fileStream.Length);
+            }
+        }
+```
+* Now we need to set some Header values and make request in the **async Task**.
+```C#
+            using (ByteArrayContent content = new ByteArrayContent(byteData))
+            {
+    
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                response = await client.PostAsync(uri, content);
+            }
+```
+
+Handling response from Azure server.
+------
+* Finally, we need to get data from response.
+ ```C#
+            string contentString = await response.Content.ReadAsStringAsync();
+            JToken resp = JToken.Parse(contentString);
+            TextView textView = (TextView)FindViewById(Resource.Id.text);
+            textView.Text = resp.ToString();
+ ```
+ * If you try to run it, you'll see something like this.
+ ```json
+ {
+"description": {
+  "tags": [
+  "dog",
+  "indoor",
+  "small",
+  "brown",
+  "animal",
+  "mammal",
+  "sitting",
+  "laying",
+  "looking",
+  "white",
+  "lying",
+  "little",
+  "wearing",
+  "feet",
+  "sleeping",
+  "blanket",
+  "bed",
+  "leather",
+  "head"
+  ],
+  "captions": [
+    {
+    "text": "a small brown and white dog lying on a blanket",
+    "confidence": 0.76464505730561938
+    }
+  ]
+  },
+  "requestId": "40eb4b52-8746-4fa4-844f-53ddcb3249de",
+  "metadata": {
+  "width": 1960,
+  "height": 4032,
+  "format": "Jpeg"
+  }
+}
+ ```
+ * To avoid this, we need to change some lines.
+ ```C#
+ 
+            JToken resp = JToken.Parse(contentString);
+            string tmp = resp.ToString();
+            TextView textView = (TextView)FindViewById(Resource.Id.text);
+            textView.Text = tmp;
+ ```
+ * Full **async Task** method:
+ ```C#
+ async Task Analyze(string imageFilePath)
+        {
+            HttpResponseMessage response;
+            string requestParameters = "visualFeatures=Description";
+            string uri = urlBase + "?" + requestParameters;
+
+            byte[] byteData = GetImageAsByteArray(imageFilePath);
+            using (ByteArrayContent content = new ByteArrayContent(byteData))
+            {
+    
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                response = await client.PostAsync(uri, content);
+            }
+
+            string contentString = await response.Content.ReadAsStringAsync();
+
+            JToken resp = JToken.Parse(contentString);
+            string tmp = resp.ToString();
+            TextView textView = (TextView)FindViewById(Resource.Id.text);
+            textView.Text = tmp;
+
+        }
+ ```
+ 
+ Summary
+ -------
+This lab is about basic **usage of Cognitive Services in Xamarin app**. I would like to hear your feedback and error reports via email: kon3gor@outlook.com
 
 
