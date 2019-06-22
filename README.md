@@ -49,7 +49,11 @@ Loading basic Xamarin app from zip:
 
 Adding some settings to the app:
 -------
-* Now we need to add permissions to read and write external storge. Also we need to add click action to the button.
+* We need to add permissions to read and write external storge. Also we need to add click action to the button and add one package from NuGet.
+* Open NuGet manager and type **
+![]()
+![]()
+* Now let's add permissions.
 * Double left click on properties. Go to the **Android Manifest** in opened window.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/7.png)
 * Scroll down and find field **Required permissions**. 
