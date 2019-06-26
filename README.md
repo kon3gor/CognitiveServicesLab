@@ -50,7 +50,7 @@ Loading basic Xamarin app from zip:
 Adding some settings to the app:
 -------
 * We need to add permissions to read and write external storge. Also we need to add click action to the button and add one package from NuGet.
-* Open NuGet manager and type **
+* Open NuGet manager and type **Microsoft.Azure.CognitiveServices.Vision.ComputerVision**
 ![]()
 ![]()
 * Now let's add permissions.
