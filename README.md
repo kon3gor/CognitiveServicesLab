@@ -36,7 +36,7 @@ Estimated time to finish this lab: 60 minutes
 
 Loading basic Xamarin app from zip:
 -------
-* Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcOiRhobqfXRN5QI?e=9mag4H) 
+* Load [zip archive](https://1drv.ms/u/s!Ao4BAFKEH4-gcf5XNKhNtPv94C8?e=IvmG3b) 
 * Unzip project
 * Open project in Visual Studio(follow screenshots bellow)
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/1.png)
@@ -51,8 +51,9 @@ Adding some settings to the app:
 -------
 * We need to add permissions to read and write external storge. Also we need to add click action to the button and add one package from NuGet.
 * Open NuGet manager and type **Microsoft.Azure.CognitiveServices.Vision.ComputerVision**
-![]()
-![]()
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/19.png)
+* Click **install**
+![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/20.png)
 * Now let's add permissions.
 * Double left click on properties. Go to the **Android Manifest** in opened window.
 ![](https://github.com/kon3gor/CognitiveServicesLab/blob/master/MK/7.png)
@@ -125,9 +126,9 @@ private const string key = "8cb6b523ef3c4ece877682e826561853";
             DefaultRequestHeaders = { { "Ocp-Apim-Subscription-Key", key } }
         };
 ```
-* And make some changes in the **OnActivityResult** method. Add this two strings to the conditional operator.
+* And make some changes in the **OnActivityResult** method. Add this two lines to the conditional operator.
 ```C#
-string path = ActualPath.GetActualPathFromFile(data.Data);
+string path = ActualPath.GetActualPathFromFile(data.Data, this);
 Analyze(path);
 ```
 * Now we need to create new **async Task** for making http requests to the cloud.
