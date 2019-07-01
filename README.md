@@ -7,7 +7,6 @@ Objectives
 ------
 During the lab you'll learn:
 
-* How to create simple Xamarin Android app.
 * How to create Cognitive Service in Azure Cloud.
 * How to make request to Azure server.
 * How to get response from Azure server.
